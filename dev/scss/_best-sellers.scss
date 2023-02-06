@@ -1,1 +1,98 @@
 //CSS for class "best-sellers-cards"
+.best-sellers-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+
+    h1 {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    .container {
+        display: grid;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .container .product-card {
+        display: grid;
+        grid-template-areas:
+        "a a a"
+        "b b c"
+        "b b c"
+        ;
+        width: 100%;
+        align-items: center;
+        padding: 1rem 2rem;
+
+        h4 {
+            grid-area: a;
+            margin: 0;
+            padding: 1rem 0;
+        }
+
+        img {
+            grid-area: b;
+            width: 50%;
+            height: auto;
+        }
+
+        button {
+            grid-area: c;
+            text-align: center;
+            white-space: nowrap;
+            width: 100%;
+            margin: 5%;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 0;
+            color: white;
+            background-color: orange;
+        }
+    }
+}
+
+
+@media (min-width: 480px){
+    .best-sellers-cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        margin: 0 -10px;
+
+        h2 {
+            width: 100%;
+            display: block;
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-end;
+            padding: 10px;
+        }
+
+        .container .product-card {
+            display: inline-block;
+            width: calc(50% - 20px);
+            margin: 0 10px 20px;
+
+            button {
+                width: 50%;
+                height: 10%;
+            }
+        }
+
+
+    }
+    
+}
