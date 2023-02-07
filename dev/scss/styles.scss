@@ -1,5 +1,6 @@
 // Place your Sass imports here...
 @use "best-sellers";
+@use "showcase-slideshow";
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -7,4 +8,5 @@ body {
         text-transform: uppercase;
         font-weight: lighter;
     }
+
 }

@@ -32,6 +32,19 @@ $(document).ready(function(){
     });
   });
 
+
+jQuery(document).ready(function() {
+    $('.slider_inner').slick({
+      infinite: true,
+      arrows: true,
+      nextArrow: '.arrow.next',
+      prevArrow: '.arrow.prev',
+      fade: true,
+      dots: true
+    })
+  });
+  
+
 $(window).resize(function () {
     $('.news-carousel-container').not('.slick-initialized').slick('resize');
 });
