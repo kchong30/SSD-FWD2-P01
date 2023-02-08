@@ -1,1 +1,199 @@
 //CSS for class "learn-more-cards"
+$fonts:  'Source Sans Pro', sans-serif;
+$primary-color: white;
+
+@mixin button-style {
+    text-decoration: none;
+    border-radius: 5.5px;
+    padding: 5px;
+}
+    
+body{
+    margin:0;
+}
+.learn-more-cards h2,.our-story-section h2{
+    font-weight:400;
+}
+
+.learn-more-cards a{
+    font-weight:300;
+}
+.learn-more-cards{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.learn-more-cards img,.our-story-section img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.overlay-content.primary{
+    height: 46.75%;
+    width: 93%;
+    top: -1px;
+    position: absolute;
+    padding: 1rem;
+    font-size: 1.35rem;
+    font-weight: 200;
+    color:  white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.overlay-content.secondary{
+    height: 46.75%;
+    width: 93%;
+    top: 50%;
+    position: absolute;
+    padding: 1rem;
+    font-size: 1.35rem;
+    font-weight: 200;
+    color:  white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.story-button{
+    padding: 5px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5.5px;
+  }
+
+  .button-square{
+    padding: 5px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5.5px;
+  }
+
+.our-story-section{
+    position: relative;
+}
+.story-content{
+    position: absolute;
+    left:0;
+    bottom:39%;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+}
+@media(min-width:480px){
+  .overlay-content {
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 200;
+    color:  white;
+    background-color: rgba(0,0,0,0.5);
+    }
+
+    .overlay-content.primary{
+        font-size: 1.5rem;
+        top:0px;
+        height: 44.5%;
+        width: 43%;
+    }
+    .overlay-content.secondary{
+        font-size: 1.5rem;
+        top:50%;
+        height: 44.4%;
+        width: 43%;
+    }
+
+    .our-story-section{
+        position: relative;
+    }
+    .story-content{
+        position: absolute;
+        right:0;
+        top:27%;
+        font-weight: 200;
+        color:  white;
+        background-color: transparent;
+        text-align: center;
+    }
+  
+    
+  .story-button{
+    padding: 5px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5.5px;
+  }
+
+  .button-square{
+    padding: 5px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5.5px;
+  }
+
+}
+
+@media(min-width:760px){
+
+    .overlay-content {
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: flex-start;
+        position: absolute;
+        right: 0;
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: 200;
+        color:  white;
+        background-color: rgba(0,0,0,0.5);
+        }
+    
+        .overlay-content.primary{
+            top: 94px;
+            height: 25%;
+            width: 37%;
+            padding: 26px;
+        }
+        .overlay-content.secondary{
+            top:59%;
+            height: 25%;
+            width: 36%;
+            padding: 26px;
+        }
+ 
+        .overlay-content h2{
+            margin: 0;
+        }
+    .story-button{
+        padding: 5px;
+        background-color: orange;
+        color: white;
+        text-decoration: none;
+        border-radius: 5.5px;
+      }
+    
+      .button-square{
+        padding: 5px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 5.5px;
+      }
+    
+    .our-story-section{
+        position: relative;
+    }
+    .story-content{
+        position: absolute;
+        right: 0;
+        bottom:39%;
+        color: white;
+        background-color: transparent;
+        text-align: center;
+    }
+
+}
