@@ -1,142 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Put Web Page Title Here...</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Put Web Page Title Here...</title>
 
-	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
-	<!-- Put Google Fonts Here -->
+    <!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
+    <!-- Put Google Fonts Here -->
 
-	<!-- end Google Fonts -->
+    <!-- end Google Fonts -->
 
-	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-	<link rel="stylesheet" href="styles/styles.css?cachebuster=1">
-</head>
-<body>
-<!-- Put your HTML code here... -->
-<header>
-	<div class="left-side-header">
-		<img src="./images/logo-audioengine.png" alt="" class="audio-engine-logo">
-	</div>
-	<div class="nav">
-		<ul class="nav-menu-text-links">
-			<li class="nav-menu_item">
-				<a href="" class="menu-nav_link">Speakers</a>
-			</li>
-			<li class="nav-menu_item">
-				<a href="" class="menu-nav_link">Components</a>
-			</li>
-			<li class="nav-menu_item">
-				<a href="" class="menu-nav_link">Deals</a>
-			</li>
-			<li class="nav-menu_item">
-				<a href="" class="menu-nav_link">Explore</a>
-			</li>
-			<li class="nav-menu_item">
-				<a href="" class="menu-nav_link">Support</a>
-			</li>
-		</ul>
-		<ul class="nav-menu-buttons">
-			<li class="nav-menu-item">
-				<a href="" class="menu-nav_link_button"><!--button for pin marker --></a>
-			</li>
-			<li class="nav-menu-item">
-				<a href="" class="menu-nav_link_button"><!--button for search bar (mag glass) --></a>
-			</li>
-			<li class="nav-menu-item">
-				<a href="" class="menu-nav_link_button"><!--button for shopping cart--></a>
-			</li>
-		</ul>
-		<div class="hamburger-menu">
-			<span class = "bar"></span>
-			<span class = "bar"></span>
-			<span class = "bar"></span>
-		</div>
-	</div>
-</header>
+    <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+    <link rel="stylesheet" href="styles/styles.css?cachebuster=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <!-- Put your HTML code here... -->
+    <header>
+      <div class="left-side-header">
+        <img
+          src="./images/logo-audioengine.png"
+          alt=""
+          class="audio-engine-logo"
+        />
+      </div>
+      <div class="nav">
+        <ul class="nav-menu-text-links">
+          <li class="nav-menu_item">
+            <a href="" class="menu-nav_link">Speakers</a>
+          </li>
+          <li class="nav-menu_item">
+            <a href="" class="menu-nav_link">Components</a>
+          </li>
+          <li class="nav-menu_item">
+            <a href="" class="menu-nav_link">Deals</a>
+          </li>
+          <li class="nav-menu_item">
+            <a href="" class="menu-nav_link">Explore</a>
+          </li>
+          <li class="nav-menu_item">
+            <a href="" class="menu-nav_link">Support</a>
+          </li>
+        </ul>
+        <ul class="nav-menu-buttons">
+          <li class="nav-menu-item">
+            <a href="" class="menu-nav_link_button"
+              ><!--button for pin marker --></a
+            >
+          </li>
+          <li class="nav-menu-item">
+            <a href="" class="menu-nav_link_button"
+              ><!--button for search bar (mag glass) --></a
+            >
+          </li>
+          <li class="nav-menu-item">
+            <a href="" class="menu-nav_link_button"
+              ><!--button for shopping cart--></a
+            >
+          </li>
+        </ul>
+        <div class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
 
-<body>
-	<section class="slideshow-carousel-showcase">
-		<h1>Main Slideshow Carousel Here</h1>
-		<!--HTML for Slideshow-- **carousel for all layouts -->
-	</section>
+    <body>
+      <section class="slideshow-carousel-showcase">
+        <h1>Main Slideshow Carousel Here</h1>
+        <!--HTML for Slideshow-- **carousel for all layouts -->
+      </section>
 
-	<section class="best-sellers-cards">
-		<div class="product-card">
-			<!-- HTML for A2 Desktop Speakers Card-->	
-		</div>
-		<div class="product-card">
-			<!-- HTML for B1 Bluetooth Receiver Card-->	
-		</div>
-		<div class="product-card">
-			<!-- HTML for A5 Wireless Speakers Card-->
-		</div>
-	</section>
-	
-	<section class="slideshow-carousel-shop-by">
-		<!--HTML for shop by room or device-- **NOTE for phone layout, not a carousel -- will use slick to implement  -->
-	</section>
+      <section class="best-sellers-cards">
+        <div class="product-card">
+          <!-- HTML for A2 Desktop Speakers Card-->
+        </div>
+        <div class="product-card">
+          <!-- HTML for B1 Bluetooth Receiver Card-->
+        </div>
+        <div class="product-card">
+          <!-- HTML for A5 Wireless Speakers Card-->
+        </div>
+      </section>
 
-	<section class = "learn-more-cards">
-		<div class="learn-more-card">
-			<!--HTML for all-new-card-->
-		</div>
-		<div class="learn-more-card">
-			<!--html for feeling-lucky-card-->
-		</div>
-		<div class="learn-more-card">
-			<!--html for our-story-card-->
-		</div>
-	</section>
+      <section class="slideshow-carousel-shop-by">
+        <h1>SHOP BY ROOM OR DEVICE</h1>
 
-	<section class="slideshow-carousel-news">
-		<!--html for in-the-news-carousel **NOTE for phone layout, not a carousel -- will use slick to implement   -->
-	</section>
+        <!-- SLICK CONTAINER -->
+        <div class="arrow previous"></div>
+        <div class="arrow next"></div>
+        <ul class="slick-slideshow">
+          <!--HTML for shop by room or device-- **NOTE for phone layout, not a carousel -- will use slick to implement  -->
+          <li>
+            <div class="slide">
+              <a href="#" class="slide-img" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-01-speaker-white.jpg" />
+              </a>
 
-	<section class="video-window">
-		<!--html for video window-->
-	</section>
+              <span class="story-slide-overlay">
+                <h2>WITH SONOS</h2>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-02-speaker-brown.jpg" />
+              </a>
 
-	<section class="utility-card">
-		<div class="back-to-top-btn">
-			<!--HTML for back to top button-->
-		</div>
-		<div class="social-media-links">
-			<!--HTML for social media links-->
-		</div>
-		<div class="email-signup-link">
-			<!--html for e-mail sign up links-->
-		</div>
-	</section>
-</body>
+              <h2>WITH SIRI</h2>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-03-speakers-brown.jpg" />
+              </a>
 
-<footer>
-	<ul class="footer-menu">
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Speakers</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Components</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Refurbished</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Find A Store</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Support</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Explore</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>About</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Contact</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Press</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Warranty</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Military</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Apps</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Privacy</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Terms</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>Legal</li>
-		<li class="footer-menu-item"><a href="" class="footer-menu-link"></a>News</li>
-	</ul>
-</footer>
+              <h2>WITH TURNABLE</h2>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-04-speakers-brown.jpg" />
+              </a>
 
+              <h2>TV ROOM</h2>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-05-speakers-brown.jpg" />
+              </a>
 
-<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
-<script src="scripts/libs/jquery/jquery-3.6.0.min.js"></script>
-<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-<script src="scripts/script.min.js?cachebuster=1"></script>
-<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
-</body>
+              <h2>KITCHEN</h2>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-06-speaker-brown.jpg" />
+              </a>
+
+              <h2>PATIO</h2>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-07-speakers-white.jpg" />
+              </a>
+
+              <h2>OFFICE</h2>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-08-speakers-white.jpg" />
+              </a>
+
+              <h2>BEDROOM</h2>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="learn-more-cards">
+        <div class="learn-more-card">
+          <!--HTML for all-new-card-->
+        </div>
+        <div class="learn-more-card">
+          <!--html for feeling-lucky-card-->
+        </div>
+        <div class="learn-more-card">
+          <!--html for our-story-card-->
+        </div>
+      </section>
+
+      <section class="slideshow-carousel-news">
+        <!--html for in-the-news-carousel **NOTE for phone layout, not a carousel -- will use slick to implement   -->
+      </section>
+
+      <section class="video-window">
+        <!--html for video window-->
+      </section>
+
+      <section class="utility-card">
+        <div class="back-to-top-btn">
+          <!--HTML for back to top button-->
+        </div>
+        <div class="social-media-links">
+          <!--HTML for social media links-->
+        </div>
+        <div class="email-signup-link">
+          <!--html for e-mail sign up links-->
+        </div>
+      </section>
+    </body>
+
+    <footer>
+      <ul class="footer-menu">
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Speakers
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Components
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Refurbished
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Find A Store
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Support
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Explore
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>About
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Contact
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Press
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Warranty
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Military
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Apps
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Privacy
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Terms
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>Legal
+        </li>
+        <li class="footer-menu-item">
+          <a href="" class="footer-menu-link"></a>News
+        </li>
+      </ul>
+    </footer>
+
+    <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
+    <script src="scripts/libs/jquery/jquery-3.6.0.min.js"></script>
+    <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+    <script src="scripts/script.min.js?cachebuster=1"></script>
+    <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slick-slideshow").slick({
+          dots: false,
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          arrows: true,
+          nextArrow: ".arrow.next",
+          prevArrow: ".arrow.previous",
+
+          //  variableWidth: true,
+
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              },
+            },
+            ,
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 450,
+              // setting the settings property
+              // to 'unslick' to destroy the slideshow
+              settings: "unslick",
+            },
+
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
+      $(window).resize(function () {
+        $(".slick-slideshow").not(".slick-initialized").slick("resize");
+      });
+
+      $(window).on("orientationchange", function () {
+        $(".slick-slideshow").not(".slick-initialized").slick("resize");
+      });
+    </script>
+  </body>
 </html>
