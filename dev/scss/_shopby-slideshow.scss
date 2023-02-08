@@ -56,7 +56,7 @@
     }
   }
 }
-@media (min-width: 450px) {
+@media  (min-width: 450px) {
   .slideshow-carousel-shop-by {
     max-width: 78%;
     margin: 100px auto;
@@ -86,8 +86,8 @@
       border-bottom: 0;
       border-right: 0;
       position: absolute;
-      top: 127%;
       z-index: 1;
+      // top:227%;
     }
 
     .arrow.next {
