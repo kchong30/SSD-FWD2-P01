@@ -142,9 +142,91 @@
 		</div>
 	</section>
 	
-	<section class="slideshow-carousel-shop-by">
-		<!--HTML for shop by room or device-- **NOTE for phone layout, not a carousel -- will use slick to implement  -->
-	</section>
+
+      <section class="slideshow-carousel-shop-by">
+        <h1>SHOP BY ROOM OR DEVICE</h1>
+
+        <!-- SLICK CONTAINER -->
+        <div class="arrow previous"></div>
+        <div class="arrow next"></div>
+        <ul class="slick-slideshow">
+          <!--HTML for shop by room or device-- **NOTE for phone layout, not a carousel -- will use slick to implement  -->
+          <li>
+            <div class="slide">
+              <a href="#" class="slide-img" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-01-speaker-white.jpg" />
+              </a>
+
+              <span class="story-slide-overlay">
+                <h2>WITH SONOS</h2>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-02-speaker-brown.jpg" />
+              </a>
+
+              <h2>WITH SIRI</h2>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-03-speakers-brown.jpg" />
+              </a>
+
+              <h2>WITH TURNABLE</h2>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-04-speakers-brown.jpg" />
+              </a>
+
+              <h2>TV ROOM</h2>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-05-speakers-brown.jpg" />
+              </a>
+
+              <h2>KITCHEN</h2>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-06-speaker-brown.jpg" />
+              </a>
+
+              <h2>PATIO</h2>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-07-speakers-white.jpg" />
+              </a>
+
+              <h2>OFFICE</h2>
+            </div>
+          </li>
+          <li>
+            <div class="slide">
+              <a href="#" title="Shop By Room - Bathroom">
+                <img src="./images/shop-slider-08-speakers-white.jpg" />
+              </a>
+
+              <h2>BEDROOM</h2>
+            </div>
+          </li>
+        </ul>
+      </section>
 
 	<section class = "learn-more-cards">
 		<div class="learn-more-card">
@@ -220,5 +302,63 @@
 <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 <script src="scripts/script.min.js?cachebuster=1"></script>
 <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slick-slideshow").slick({
+          dots: false,
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          arrows: true,
+          nextArrow: ".arrow.next",
+          prevArrow: ".arrow.previous",
+
+          //  variableWidth: true,
+
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              },
+            },
+            ,
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 450,
+              // setting the settings property
+              // to 'unslick' to destroy the slideshow
+              settings: "unslick",
+            },
+
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
+      $(window).resize(function () {
+        $(".slick-slideshow").not(".slick-initialized").slick("resize");
+      });
+
+      $(window).on("orientationchange", function () {
+        $(".slick-slideshow").not(".slick-initialized").slick("resize");
+      });
+    </script>
 </body>
 </html>
