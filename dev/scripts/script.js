@@ -33,14 +33,15 @@ $(document).ready(function(){
   });
 
 
-jQuery(document).ready(function() {
+$(document).ready(function() {
     $('.slider_inner').slick({
       infinite: true,
       arrows: true,
-      nextArrow: '.arrow.next',
+      nextArrow: '.arrow.nexty',
       prevArrow: '.arrow.prev',
       fade: true,
       dots: true
+
     })
   });
   
@@ -108,3 +109,5 @@ $(document).ready(function () {
   $(window).on("orientationchange", function () {
     $(".slick-slideshow").not(".slick-initialized").slick("resize");
   });
+
+  
