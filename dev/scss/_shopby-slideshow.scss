@@ -50,7 +50,7 @@
         transform: translate(-50%, -50%);
         color: white;
         font-size: 13px;
-
+        font-weight: bold;
         background-color: rgb(0, 0, 0, 0.3);
         align-items: center;
       }
@@ -61,7 +61,9 @@
 @media (min-width: 450px) {
   .slideshow-carousel-shop-by {
     max-width: 78%;
-    margin: 100px auto;
+  left:8%;
+  position: relative;
+  
     h1 {
       text-align: center;
     }
