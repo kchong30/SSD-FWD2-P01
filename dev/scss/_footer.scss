@@ -1,1 +1,33 @@
 //CSS for Footer Section of HTML
+.footer-menu {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ebebeb;
+  color: gray;
+}
+.footer-menu-item {
+  flex-basis: 100%;
+}
+
+.footer-menu-link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+@media (min-width: 340px) {
+  .footer-menu-item {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media (min-width: 500px) {
+  .footer-menu-item {
+    flex-basis: calc(25% - 10px);
+  }
+}
