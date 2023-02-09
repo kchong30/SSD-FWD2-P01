@@ -4,5 +4,18 @@
 @use "best-sellers";
 @use "showcase-slideshow";
 @use "shopby-slideshow";
+@use 'learn-more';
+@use "news-slideshow";
 
+// *:not(i){
 
+@use "footer";
+
+body {
+
+    font-family: 'Source Sans Pro', sans-serif;
+    h1, h2, h3, h4, h5, h6 {
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+}
