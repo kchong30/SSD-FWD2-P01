@@ -11,64 +11,65 @@
   }
   .wrapper {
     display: flex;
-   
+
     justify-content: center;
 
-  .slick-slideshow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    column-gap: 10px;
-    row-gap: 10px;
-    max-width: 215px;
-    li {
-      text-align: center;
-      width: calc(50% - 5px);
-
+    .slick-slideshow {
       padding: 0;
-      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 10px;
+      row-gap: 10px;
+      max-width: 215px;
+      li {
+        text-align: center;
+        width: calc(50% - 5px);
 
-      .slide {
-        position: relative;
-        border-radius: 50%;
-      }
-      img,h2 {
-        margin: 0 auto;
-        border-radius: 50%;
-        // width: 50%;
-        // height: auto;
-        width: 100px;
-        height: 100px;
-      }
-      h2 {
-        display: flex;
-        position: absolute;
-        justify-content: center;
-        top: 49%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 13px;
-        font-weight: bold;
-        background-color: rgb(0, 0, 0, 0.3);
-        align-items: center;
+        padding: 0;
+        list-style: none;
+
+        .slide {
+          position: relative;
+          border-radius: 50%;
+        }
+        img,
+        h2 {
+          margin: 0 auto;
+          border-radius: 50%;
+          // width: 50%;
+          // height: auto;
+          width: 100px;
+          height: 100px;
+        }
+        h2 {
+          display: flex;
+          position: absolute;
+          justify-content: center;
+          top: 49%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          font-size: 13px;
+          font-weight: bold;
+          background-color: rgb(0, 0, 0, 0.3);
+          align-items: center;
+        }
       }
     }
   }
 }
-}
 @media (min-width: 450px) {
   .slideshow-carousel-shop-by {
     max-width: 78%;
-  left:8%;
-  position: relative;
-  
+    left: 5%;
+    position: relative;
+
     h1 {
       text-align: center;
     }
     .wrapper {
-
       display: flex;
       position: relative;
       align-items: center;
@@ -77,9 +78,11 @@
       .slick-slideshow {
         max-width: 100%;
         // column-count: 1;
+        left: 6%;
 
         li {
-          img,h2 {
+          img,
+          h2 {
             width: 130px;
             height: 130px;
           }
@@ -103,7 +106,7 @@
       }
 
       .arrow.next {
-        right: -38px;
+        right: -12%;
         transform: rotate(135deg);
       }
 
