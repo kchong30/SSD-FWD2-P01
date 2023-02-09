@@ -1,23 +1,48 @@
 //CSS for class "learn-more-cards"
-$fonts:  'Source Sans Pro', sans-serif;
-$primary-color: white;
+@mixin overlay-styling{
+    position: absolute;
+    padding: 1rem;
+    font-size: 1.35rem;
+    font-weight: 200;
+    color:  white;
+    background-color: rgba(0,0,0,0.5);
+}
 
-@mixin button-style {
+@mixin button-style {  
+.story-button{
+    padding: 5px 25px;
+    background-color: orange;
+    color: white;
     text-decoration: none;
     border-radius: 5.5px;
-    padding: 5px;
+  }
+  .button-square{
+    padding: 5px 25px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5.5px;
+  }
 }
     
 body{
     margin:0;
 }
-.learn-more-cards h2,.our-story-section h2{
+.learn-more-cards h2{
     font-weight:400;
+    margin-bottom: -25px;
 }
+
+.our-story-section h2{
+    font-weight: 600;
+}
+
 
 .learn-more-cards a{
     font-weight:300;
 }
+
+
 .learn-more-cards{
     position: relative;
     margin: 0;
@@ -29,56 +54,87 @@ body{
     max-width: 100%;
     height: auto;
 }
+
+
+.overlay-content.primary{
+    height: 45.2%;
+    width: 90%;
+    top: -1px;
+    @include overlay-styling();
+}
+
+.overlay-content.secondary{
+    height: 45.75%;
+    width: 90%;
+    top: 50%;
+    @include overlay-styling();
+}
+
+@include button-style();
+.our-story-section{
+    position: relative;
+}
+.story-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 4px;
+    bottom: 0px;
+    position: absolute;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+
+    h2{
+        font-size: 2.25rem;
+        line-height: 0.5rem;
+        top: 17px;
+        position: absolute;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media(min-width:320px){
+
+
 .overlay-content.primary{
     height: 46.75%;
     width: 93%;
     top: -1px;
-    position: absolute;
-    padding: 1rem;
-    font-size: 1.35rem;
-    font-weight: 200;
-    color:  white;
-    background-color: rgba(0,0,0,0.5);
+    @include overlay-styling();
 }
 
 .overlay-content.secondary{
     height: 46.75%;
     width: 93%;
     top: 50%;
-    position: absolute;
-    padding: 1rem;
-    font-size: 1.35rem;
-    font-weight: 200;
-    color:  white;
-    background-color: rgba(0,0,0,0.5);
+    @include overlay-styling();
 }
-
-.story-button{
-    padding: 5px;
-    background-color: orange;
-    color: white;
-    text-decoration: none;
-    border-radius: 5.5px;
-  }
-
-  .button-square{
-    padding: 5px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    border-radius: 5.5px;
-  }
-
+@include button-style();
 .our-story-section{
     position: relative;
 }
 .story-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 4px;
+    bottom: 0px;
     position: absolute;
-    left:0;
-    bottom:39%;
     color: white;
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.5);
     text-align: center;
+
+    p{
+        margin-top: 4rem;
+        font-size: 20.95px;
+    }
+}
+
 }
 @media(min-width:480px){
   .overlay-content {
@@ -92,16 +148,17 @@ body{
     }
 
     .overlay-content.primary{
-        font-size: 1.5rem;
-        top:0px;
-        height: 44.5%;
-        width: 43%;
+        font-size: 1.2rem;
+        top: 32px;
+        height: 30.5%;
+        width: 42%;
+    
     }
     .overlay-content.secondary{
-        font-size: 1.5rem;
-        top:50%;
-        height: 44.4%;
-        width: 43%;
+        font-size: 1.2rem;
+        top: 57%;
+        height: 29.4%;
+        width: 41%;
     }
 
     .our-story-section{
@@ -110,29 +167,17 @@ body{
     .story-content{
         position: absolute;
         right:0;
-        top:27%;
         font-weight: 200;
         color:  white;
-        background-color: transparent;
         text-align: center;
+
+        p{
+            padding: 0 2rem 0 2rem;
+            font-size: 1.25rem;
+        }
     }
   
-    
-  .story-button{
-    padding: 5px;
-    background-color: orange;
-    color: white;
-    text-decoration: none;
-    border-radius: 5.5px;
-  }
-
-  .button-square{
-    padding: 5px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    border-radius: 5.5px;
-  }
+    @include button-style();
 
 }
 
@@ -150,8 +195,15 @@ body{
         font-weight: 200;
         color:  white;
         background-color: rgba(0,0,0,0.5);
+
+       h2{
+            top: 13px;
+            position: absolute;
         }
-    
+        p{
+            margin-top: -40px;
+        }
+        }
         .overlay-content.primary{
             top: 94px;
             height: 25%;
@@ -164,36 +216,63 @@ body{
             width: 36%;
             padding: 26px;
         }
- 
-        .overlay-content h2{
-            margin: 0;
-        }
-    .story-button{
-        padding: 5px;
-        background-color: orange;
-        color: white;
-        text-decoration: none;
-        border-radius: 5.5px;
-      }
     
-      .button-square{
-        padding: 5px;
-        background-color: white;
-        color: black;
-        text-decoration: none;
-        border-radius: 5.5px;
-      }
-    
+        @include button-style();
     .our-story-section{
         position: relative;
     }
     .story-content{
         position: absolute;
         right: 0;
+        left: 0;
         bottom:39%;
         color: white;
         background-color: transparent;
         text-align: center;
+
+        p{
+            padding: 6rem 13rem 0 13rem;
+          font-size: 1.25rem;
+          font-weight:400 ;
+        }
+        }
+    
     }
 
-}
+    @media(min-width:1024px){
+
+        .overlay-content {
+            display: flex;
+            flex-direction: column;  
+            justify-content: center;
+            align-items: flex-start;
+            position: absolute;
+            right: 0;
+            padding: 1rem;
+            font-size: 2rem;
+            font-weight: 200;
+            color:  white;
+            background-color: rgba(0,0,0,0.5);
+    
+           h2{
+                top: 13px;
+                position: absolute;
+            }
+            p{
+                margin-top: -40px;
+            }
+            }
+            .overlay-content.primary{
+                top: 94px;
+                height: 20%;
+                width: 37%;
+                padding: 26px;
+            }
+            .overlay-content.secondary{
+                top:59%;
+                height: 20%;
+                width: 36%;
+                padding: 26px;
+            }
+        
+    }
