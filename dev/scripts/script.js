@@ -32,7 +32,7 @@ $(document).ready(function(){
     });
   });
 
-
+//Script for showcase-slideshow - Kevin
 $(document).ready(function() {
     $('.slider_inner').slick({
       infinite: true,
@@ -41,7 +41,6 @@ $(document).ready(function() {
       prevArrow: '.arrow.prev',
       fade: true,
       dots: true
-
     })
   });
   
@@ -110,4 +109,16 @@ $(document).ready(function () {
     $(".slick-slideshow").not(".slick-initialized").slick("resize");
   });
 
-  
+
+//script for navbar - dropdown menu; - Kevin
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".dropdown-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("show-menu");
+})
+
+document.querySelectorAll(".nav-menu ul li").forEach(n => n.addEventListener("click", () =>{
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("show-menu");}))

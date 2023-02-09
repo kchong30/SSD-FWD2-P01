@@ -1,6 +1,4 @@
  /*News Carousel Slide Show */
- 
-
 .slideshow-carousel-showcase{
     .slide_wrapper {
         position: relative;
@@ -41,7 +39,7 @@
           margin: 0;
         }
       }
-      
+
       .container h2 {
         font-family: 'Poppins', sans-serif;
       }
@@ -50,12 +48,12 @@
     /*Arrow Keys for carousel */
     span.arrow { 
         display: block;
-        width:  1.5rem;
-        height: 1.5rem;
-        border: 0.5rem solid rgb(255, 145, 0);
+        width:  1.2rem;
+        height: 1.2rem;
+        border: 0.4rem solid rgb(255, 145, 0);
         border-bottom: 0;
         border-left: 0;
-        border-radius: 4px;
+        border-radius: 0.2rem;
         z-index: 1;
         top: 50%;
         cursor: pointer;
@@ -73,12 +71,12 @@
       }
       
       span.arrow.nexty {
-        right: 40px;
+        right: 2.0rem;
         transform:(rotate(45deg));
       }
       
       span.arrow.prev {
-        left: 40px;
+        left: 2.0rem;
         transform: rotate(225deg);
       }
       
