@@ -44,9 +44,9 @@
     /*Arrow Keys for carousel */
     span.arrow { 
         display: block;
-        width:  1.2rem;
-        height: 1.2rem;
-        border: 0.4rem solid rgb(255, 145, 0);
+        width:  0.7rem;
+        height: 0.7rem;
+        border: 0.5rem solid rgb(255, 145, 0);
         border-bottom: 0;
         border-left: 0;
         border-radius: 0.2rem;
@@ -66,12 +66,12 @@
         opacity: 1;
       }
       
-      span.arrow.nexty {
+      span.arrow.next-showcase {
         right: 2.0rem;
         transform:(rotate(45deg));
       }
       
-      span.arrow.prev {
+      span.arrow.prev-showcase {
         left: 2.0rem;
         transform: rotate(225deg);
       }

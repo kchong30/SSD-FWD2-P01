@@ -41,8 +41,8 @@ $(document).ready(function() {
     $('.slider_inner').slick({
       infinite: true,
       arrows: true,
-      nextArrow: '.arrow.nexty',
-      prevArrow: '.arrow.prev',
+      nextArrow: '.arrow.next-showcase',
+      prevArrow: '.arrow.prev-showcase',
       fade: true,
       dots: true
     })
@@ -126,3 +126,24 @@ hamburger.addEventListener("click", () => {
 document.querySelectorAll(".nav-menu ul li").forEach(n => n.addEventListener("click", () =>{
   hamburger.classList.remove("active");
   navMenu.classList.remove("show-menu");}))
+
+
+  //script for video window - Erik + Kevin
+
+const modWrapper = document.getElementById("vid-modal-wrapper");
+const playBtn = document.querySelector(".play-btn");
+const modalBackdrop = document.querySelector(".modalBackdrop");
+
+
+function showModal() {
+  modWrapper.classList.add("show");
+  playBtn.style.display = "none";
+  modalBackdrop.classList.add("show");
+};
+
+function hideModal() {
+  modWrapper.classList.remove("show");
+  playBtn.style.display = "flex";
+  modalBackdrop.classList.remove("show");
+
+};
