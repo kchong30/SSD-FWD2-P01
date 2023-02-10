@@ -1,1 +1,46 @@
-//CSS for class "utility-card"
+.to_top {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .top_wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .page_top_link {
+    color: orange;
+    text-decoration: none;
+    font-size: 150%;
+  }
+  
+  .arrow-up-outline {
+    color: orange;
+    font-size: 170%;
+  }
+  
+  .social-media-icons {
+    font-size: 200%;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .email-social {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: -2.75rem 2rem 0;
+    position: relative;
+    width: auto;
+    height: 5rem;
+  }
+
+  @media (max-width: 600px) {
+    .email-social {
+      justify-content: flex-start;
+      margin: 2.75em 0rem 0;
+      margin-top: -7px;
+      vertical-align: top;
+    }
+  }
