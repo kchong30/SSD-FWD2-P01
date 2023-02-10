@@ -14,10 +14,16 @@
 @use "footer";
 
 body {
-
+    max-width: 1416px;
+    margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     h1, h2, h3, h4, h5, h6 {
         text-transform: uppercase;
         font-weight: lighter;
     }
+  
 }
+@media (min-width: 1416px){
+	body {
+		background-color: rgb(77, 76, 76);
+	  }	}
