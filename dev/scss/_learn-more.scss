@@ -274,5 +274,31 @@ body{
                 width: 36%;
                 padding: 26px;
             }
+            .story-content{
+                h2{
+                    top: 50px;
+                }
+    
+                p{
+                    padding: 9rem 18rem 0 18rem;
+                    font-size: 2rem;
+                    font-weight: 300;
+                }
+            }
         
+    }
+
+    @media(min-width: 1416px){
+        
+        .story-content{
+            h2{
+                top: 60px;
+            }
+
+            p{
+                padding: 9rem 18rem 0 18rem;
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
     }
