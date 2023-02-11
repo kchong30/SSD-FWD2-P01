@@ -8,13 +8,13 @@
 @use "news-slideshow";
 @use "video-window";
 @use "utility-card";
+@use "footer";
+
 
 // *:not(i){
 
-@use "footer";
 
 body {
-    // max-width: 1416px;
     margin: 0;
     padding-right: 0;
     background-color: white;
@@ -23,10 +23,19 @@ body {
         text-transform: uppercase;
         font-weight: lighter;
     }
+    .wrap {
+        max-width: 1416px;
+        margin: 0 auto;
+        background-color: white;	
+    }
+    
   
 }
-// @media (min-width: 1416px){
-// 	body {
-// 		padding-left: 20px;
-//         padding-right: 20px;
-// 	  }	}
+@media (min-width: 1416px){
+	body {
+            background-color: rgb(77, 76, 76);
+        
+	  }
+  
+    
+	}

@@ -2,7 +2,9 @@
 .slideshow-carousel-news {
     overflow: hidden;
     margin: 10%;
-    
+    h1{
+        text-align: center;
+    }
 }
 
 .slick-slide {
@@ -56,4 +58,13 @@
         }
     }
 
+}
+@media (min-width: 1416px){
+    .arrow.n {
+        right: 11rem;
+    }
+    
+    .arrow.p {
+        left: 11rem;
+    }
 }
