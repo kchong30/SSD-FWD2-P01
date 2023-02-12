@@ -1,5 +1,7 @@
  /*News Carousel Slide Show */
 .slideshow-carousel-showcase{
+  position: relative;
+  z-index: 1;
     .slide_wrapper {
         position: relative;
         max-width: 100%;
