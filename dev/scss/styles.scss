@@ -9,6 +9,7 @@
 @use "video-window";
 @use "utility-card";
 @use "footer";
+@use "slick";
 
 
 // *:not(i){
@@ -36,6 +37,5 @@ body {
             background-color: rgb(77, 76, 76);
         
 	  }
-  
-    
+
 	}

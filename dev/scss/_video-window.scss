@@ -16,7 +16,7 @@
         position:absolute;
         top:5%;
         font-weight: 600;
-        font-size: calc(3vw + 2vh);
+        font-size: calc(1rem + 5vw);
         margin:0;
     }
 
@@ -26,7 +26,7 @@
         justify-content: center;
         position:absolute;
         color: #f60;
-        font-size: calc(8vw + 8vh);
+        font-size: calc(3rem + 15vw);
         z-index: 1;
         border-radius: 100%;
         margin:0;
@@ -102,5 +102,19 @@
 
 .my-video:hover{
   border: solid rgb(173, 173, 243);
+}
+
+@media (min-width:1416px){
+
+  .video-window {
+    h1 {
+      font-size: 88px;
+    }
+
+    .play-btn {
+      font-size: 260px;
+    }
+  }
+
 }
   
