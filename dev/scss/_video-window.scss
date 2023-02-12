@@ -35,10 +35,10 @@
   };
 
   .vid-modal-wrapper {
+    display:none;
     max-width: 60%;
     justify-content: center;
     position: fixed;
-    margin:0 auto;
     top: 20%;
     left: 0;
     right: 0;
@@ -81,9 +81,12 @@
   
 
   .vid-modal-wrapper.show {
+    display:block;
     width: 100%;
     opacity: 1;
     z-index: 100;
+    margin:0 auto;
+
   }
 
   .modalBackdrop.show{
@@ -95,5 +98,9 @@
     height:100vh;
     z-index: 0;
     background-color:rgba(0, 0, 0, 0.493);
+}
+
+.my-video:hover{
+  border: solid rgb(173, 173, 243);
 }
   
